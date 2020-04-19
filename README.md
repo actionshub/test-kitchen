@@ -1,6 +1,6 @@
 # test-kitchen
 
-[![CI State](https://github.com/actionshub/testkitchen/workflows/release/badge.svg)](https://github.com/actionshub/kitchen-dokken)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A Github Action to run Test Kitchen on your cookbooks
 
