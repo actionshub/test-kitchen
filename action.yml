@@ -1,0 +1,22 @@
+name: 'TestKitchen'
+author: 'Jason Field'
+description: 'Used to run Test Kitchen commands in your build pipeline'
+inputs:
+  action:
+    description: 'Action to use on test kitchen'
+    required: false
+    default: 'test'
+  os:
+    description: 'Operating System to run tests on'
+    required: true
+
+  suite:
+    description: 'Which suite to run'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'tool'
+  color: 'red'

@@ -1,0 +1,23 @@
+{
+  "name": "testkitchen",
+  "version": "1.0.0",
+  "description": "[![CI State](https://github.com/actionshub/testkitchen/workflows/release/badge.svg)](https://github.com/actionshub/chef-delivery)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actionshub/testkitchen.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/actionshub/testkitchen/issues"
+  },
+  "homepage": "https://github.com/actionshub/testkitchen#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/exec": "^1.0.2"
+  }
+}
