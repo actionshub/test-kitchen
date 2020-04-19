@@ -1,4 +1,4 @@
-name: 'TestKitchen'
+name: 'actions-hub-test-kitchen'
 author: 'Jason Field'
 description: 'Used to run Test Kitchen commands in your build pipeline'
 inputs:
@@ -18,5 +18,5 @@ runs:
   using: 'node12'
   main: 'index.js'
 branding:
-  icon: 'tool'
-  color: 'red'
+  icon: 'layers'
+  color: 'green'
