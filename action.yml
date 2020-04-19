@@ -1,4 +1,4 @@
-name: 'actions-hub-test-kitchen'
+name: 'actionshub-test-kitchen'
 author: 'Jason Field'
 description: 'Used to run Test Kitchen commands in your build pipeline'
 inputs:
