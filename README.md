@@ -30,9 +30,10 @@ jobs:
       uses: actionshub/chef-install@master
     - name: Test-Kitchen
       uses: actionshub/test-kitchen@master
-      env:
+      with:
         suite: ${{ matrix.suite }}
         os: ${{ matrix.os }}
+      env:
         CHEF_LICENSE: accept-no-persist
         KITCHEN_LOCAL_YAML: kitchen.dokken.yml
 ```
