@@ -8,11 +8,11 @@ inputs:
     default: 'test'
   os:
     description: 'Operating System to run tests on'
-    required: true
+    required: false
 
   suite:
     description: 'Which suite to run'
-    required: true
+    required: false
 
 runs:
   using: 'node12'

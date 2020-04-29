@@ -7,8 +7,17 @@ async function main() {
     const os = core.getInput('os')
     const suite = core.getInput('suite')
     const action = core.getInput('action')
+    var suiteName = ''
+    if (suite)
+    {
+       suiteName += suite
+    }
+    if (os)
+    {
+      suiteName += `-${os}`
+    }
 
-    await exec.exec(`kitchen ${action} ${suite}-${os}`)
+    await exec.exec(`kitchen ${action} ${suiteName}`)
   } catch (error){
     core.setFailed(error.message);
   }
