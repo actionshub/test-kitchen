@@ -23,13 +23,7 @@ async function main() {
       await exec.exec(`kitchen ${action} ${suiteName}`)
     }
     else
-    const windowsPath = core.getInput('windowsPath');
-      if (version) {
-        versionParam = `-version ${version}`
-      }
-      else
     await exec.exec(`kitchen ${action} ${suiteName}`)
-    core.addPath(`${windowsPath}\\bin`)
   } catch (error){
     core.setFailed(error.message);
   }
