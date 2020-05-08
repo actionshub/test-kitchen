@@ -23,7 +23,7 @@ async function main() {
       await exec.exec(`kitchen ${action} ${suiteName}`)
     }
     else
-      await exec.exec(`powershell.exe -command ". { kitchen ${action} ${suiteName} }"`)
+      await exec.exec(`powershell.exe -command "kitchen ${action} ${suiteName}"`)
   } catch (error){
     core.setFailed(error.message);
   }
