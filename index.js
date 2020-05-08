@@ -11,7 +11,7 @@ async function main() {
     var suiteName = ''
     if (suite)
     {
-       suiteName += suite
+       suiteName += `${suite}`
     }
     if (os)
     {
