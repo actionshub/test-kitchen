@@ -17,6 +17,14 @@ async function main() {
       suiteName += `-${os}`
     }
 
+    if (os.platform() != 'win32')
+    {
+
+      await exec.exec(`powershell.exe -command "kitchen ${action} ${suiteName}"`)
+      core.addPath(`${windowsPath}\\bin`)
+      // core.addPath(`${windowsPath}\\embedded\\bin`)
+    }
+    else
     await exec.exec(`kitchen ${action} ${suiteName}`)
   } catch (error){
     core.setFailed(error.message);
