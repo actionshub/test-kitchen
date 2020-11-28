@@ -25,11 +25,11 @@ jobs:
       fail-fast: false
     steps:
     - name: Check out code
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: Install Chef
-      uses: actionshub/chef-install@master
+      uses: actionshub/chef-install@main
     - name: Test-Kitchen
-      uses: actionshub/test-kitchen@master
+      uses: actionshub/test-kitchen@main
       with:
         suite: ${{ matrix.suite }}
         os: ${{ matrix.os }}
@@ -50,11 +50,11 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Install Chef
-        uses: actionshub/chef-install@master
+        uses: actionshub/chef-install@main
       - name: Kitchen Converge
-        uses: actionshub/test-kitchen@master
+        uses: actionshub/test-kitchen@main
         env:
           CHEF_LICENSE: accept-no-persist
           KITCHEN_LOCAL_YAML: kitchen.macos.yml
@@ -69,7 +69,7 @@ jobs:
           echo "sourced profile for JAVA_HOME"
           echo "New JAVA home after Chef run is: ${JAVA_HOME}"
       - name: Kitchen Verify
-        uses: actionshub/test-kitchen@master
+        uses: actionshub/test-kitchen@main
         env:
           CHEF_LICENSE: accept-no-persist
           KITCHEN_LOCAL_YAML: kitchen.macos.yml
