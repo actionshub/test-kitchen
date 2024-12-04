@@ -80,6 +80,7 @@ jobs:
           suite: adoptopenjdk-14
           os: macos
           action: verify
+          working-directory: './cookbook'
 ```
 
 ## Input
