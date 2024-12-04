@@ -13,6 +13,10 @@ inputs:
   suite:
     description: 'Which suite to run'
     required: true
+  working-directory:
+    description: 'Working directory where kitchen commands will be executed'
+    required: false
+    default: '.'
 
 runs:
   using: 'node20'
