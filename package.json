@@ -18,6 +18,6 @@
   "homepage": "https://github.com/actionshub/testkitchen#readme",
   "dependencies": {
     "@actions/core": "^1.2.0",
-    "@actions/exec": "^1.0.2"
+    "@actions/exec": "^2.0.0"
   }
 }
